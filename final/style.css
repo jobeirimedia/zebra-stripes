@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* let's get started */
+/* you can find the starter code in my github */
+/* mentioned in the description of this video */
+
+.container {
+  height: 100vh;
+}
+
+.black-and-white {
+  height: 20vh;
+  border-bottom: 0.1rem dotted orangered;
+}
+
+.black-and-white--1 {
+  background: repeating-linear-gradient(
+    to right,
+    black,
+    black 1rem,
+    white 1rem,
+    white 2rem
+  );
+}
+
+/* In the box, It started with white color and it will continue until the second stop color that is also white in this senario. */
+/* The length of between two white is 1rem.  1rem - 0 = 1rem */
+
+/* Then at 1rem, It started the third stop color that is black and it will continue until the last stop color. */
+/* The length of between two black is 1rem.  2rem - 1rem = 1rem */
+
+/* Because the last stop color length is 2rem then this pattern occured infinitely in each 2rem. */
+
+/* The same explanation is true for other div element */
+/* To understand correctly in this toturial I increase the size of each step by 1rem */
+
+.black-and-white--2 {
+  background: repeating-linear-gradient(
+    to right,
+    black,
+    black 2rem,
+    white 2rem,
+    white 4rem
+  );
+}
+
+.black-and-white--3 {
+  background: repeating-linear-gradient(
+    to right,
+    black,
+    black 3rem,
+    white 3rem,
+    white 6rem
+  );
+}
+
+.black-and-white--4 {
+  background: repeating-linear-gradient(
+    to right,
+    black,
+    black 4rem,
+    white 4rem,
+    white 8rem
+  );
+}
+
+.black-and-white--5 {
+  background: repeating-linear-gradient(
+    to right,
+    black,
+    black 5rem,
+    white 5rem,
+    white 10rem
+  );
+}
+
+/* Done */
+
+/* If you want to see more content from me. Please subscribe. */
